@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Italiana&family=Nobile:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Outfit:wght@100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .card {
+    @apply h-[310px] w-full max-w-[340px] flex flex-col items-center drop-shadow-xl;
+  }
+  .imgCardBox {
+    @apply p-2 bg-white rounded-3xl overflow-hidden h-[262px] w-full;
+  }
+  .imgCard {
+    @apply rounded-2xl object-cover h-full w-full;
+  }
+  .card2box {
+    @apply flex flex-col -mt-16 w-[160px];
+  }
+  .card2 {
+    @apply h-[72px] bg-white flex flex-col items-center justify-center rounded-t-2xl text-center;
+  }
+  .titleCard {
+    @apply text-lg text-brand-pink;
+  }
+  .descCard {
+    @apply text-dark-20 text-[10px];
+  }
+  .buttonCard {
+    @apply h-[33px] bg-brand-pink rounded-b-2xl text-white;
+  }
+  .info {
+    @apply flex flex-col items-center pb-[25px];
+  }
+  .infoImg {
+    @apply w-[50px] h-[50px] mt-[44px] flex items-center justify-center;
+  }
+  .infoTitle {
+    @apply text-brand-pink text-lg font-medium w-full max-w-[174px] text-center leading-5 mx-5 h-[40px] flex items-center justify-center;
+  }
+  .infoDesc {
+    @apply text-dark-20 text-center mx-4 tracking-tight leading-5;
+  }
+  .depoCard {
+    @apply w-full max-w-[340px] bg-white rounded-3xl flex flex-col items-center drop-shadow-2xl px-2;
+  }
+  .depoImg {
+    @apply h-[163px] overflow-hidden rounded-2xl object-cover mt-2 drop-shadow-2xl;
+  }
+  .depoName {
+    @apply text-dark-10 text-2xl font-medium;
+  }
+  .depoDesc {
+    @apply leading-4 tracking-tighter text-dark-20 pb-3;
+  }
+  .btnPrimary {
+    @apply bg-white text-brand-pink p-2 rounded-full px-4 font-semibold font-buttons;
+  }
+}
