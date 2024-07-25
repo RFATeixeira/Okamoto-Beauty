@@ -1,129 +1,221 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="../src/output.css" rel="stylesheet" />
+    <link
+      rel="shortcut icon"
+      href="./src/images/logo.svg"
+      type="image/x-icon"
+    />
     <title>Okamoto Beauty</title>
   </head>
-  <body class="text-body text-dark-10">
-    <header class="h-[70px] flex bg-white">
-      <div class="w-full flex items-center justify-between mx-5">
-        <div class="flex flex-col justify-center">
-          <span class="text-2xl font-emphasis text-dark-10"
-            >OKAMOTO BEAUTY</span
-          >
-          <span class="text-black -mt-2 text-[12px] font-semibold"
-            >O cuidado que você merece!</span
-          >
+  <body class="text-dark-10">
+    <header class="fixed w-full top-0 z-50">
+      <nav class="h-[70px] flex bg-white">
+        <div
+          class="w-full flex items-center justify-between lg:justify-around mx-5"
+        >
+          <a href="#" class="flex flex-col justify-center">
+            <span class="text-2xl font-emphasis text-dark-10"
+              >OKAMOTO BEAUTY</span
+            >
+            <span class="text-black -mt-2 text-[12px] font-semibold"
+              >O cuidado que você merece!</span
+            >
+          </a>
+          <div class="flex items-center">
+            <div class="max-lg:hidden">
+              <ul class="flex gap-4 font-medium">
+                <li class="navBtn"><a href="#">INICIO</a></li>
+                <li class="navBtn"><a href="#treatments">TRATAMENTOS</a></li>
+                <li class="navBtn"><a href="#book">AGENDAMENTO</a></li>
+                <li class="navBtn">
+                  <a href="#newspromo">NOVIDADES & PROMO</a>
+                </li>
+                <li class="navBtn"><a href="#contact">CONTATO</a></li>
+              </ul>
+            </div>
+            <div class="flex gap-4 md:ml-4">
+              <button
+                id="menuBtn"
+                type="button"
+                class="lg:hidden hover:text-brand-pink transition duration-300 z-50"
+              >
+                <svg
+                  class="h-7 w-7"
+                  stroke="currentColor"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M10 18h10"
+                  ></path>
+                </svg>
+              </button>
+              <img src="./src/images/logo.svg" alt="Logo" class="w-7" />
+            </div>
+          </div>
         </div>
-        <div class="flex gap-4">
-          <img src="./src/images/menu.png" alt="Menu" class="w-7" />
-          <img src="./src/images/logo.svg" alt="Logo" class="w-7" />
+        <div
+          id="menu"
+          class="z-40 absolute right-0 hidden transition duration-300"
+        >
+          <div
+            class="mt-[70px] drop-shadow-2xl text-end rounded-l-3xl overflow-hidden"
+          >
+            <a
+              href="#"
+              class="bg-brand-pink hover:bg-brand-pink/90 text-white block px-3 py-2 font-medium drop-shadow-2xl border-b-2 border-brand-pink-20 transition duration-300"
+              >INICIO</a
+            >
+            <a
+              href="#treatments"
+              class="bg-brand-pink-10 hover:bg-brand-pink/90 text-white block px-3 py-2 font-medium drop-shadow-2xl border-b-2 border-brand-pink-20 transition duration-300"
+              >TRATAMENTOS</a
+            >
+            <a
+              href="#book"
+              class="bg-brand-pink-10 hover:bg-brand-pink/90 text-white block px-3 py-2 font-medium drop-shadow-2xl border-b-2 border-brand-pink-20 transition duration-300"
+              >AGENDAMENTO</a
+            >
+            <a
+              href="#newspromo"
+              class="bg-brand-pink-10 hover:bg-brand-pink/90 text-white block px-3 py-2 font-medium drop-shadow-2xl border-b-2 border-brand-pink-20 transition duration-300"
+              >NOVIDADES & PROMO</a
+            >
+            <a
+              href="#contact"
+              class="bg-brand-pink-10 hover:bg-brand-pink/90 text-white block px-3 py-2 font-medium drop-shadow-2xl transition duration-300"
+              >CONTATO</a
+            >
+          </div>
         </div>
-      </div>
+      </nav>
     </header>
-    <section
-      class="bg-brand-pink w-full h-[244px] flex justify-center items-center"
-    >
+    <section class="bg-brand-pink flex justify-center items-center mt-[70px]">
       <div
-        class="bg-hero-image bg-no-repeat bg-contain bg-top w-[320px] h-[244px] relative drop-shadow-xl mx-2"
+        class="bg-hero-image bg-no-repeat bg-contain bg-top w-[320px] md:w-[800px] h-[244px] md:h-[600px] relative drop-shadow-xl mx-2"
       >
-        <button class="btnPrimary bottom-12 left-2 absolute">
+        <a
+          href="#about"
+          class="btnPrimary bottom-12 left-2 md:bottom-56 md:left-8 absolute"
+        >
           Saiba mais sobre nós
-        </button>
+        </a>
       </div>
     </section>
-    <section class="w-full font-body pt-[76px] bg-light-10 pb-24">
+    <section
+      id="treatments"
+      class="w-full font-body pt-[76px] bg-light-10 pb-24"
+    >
       <div class="flex flex-col justify-center items-center mx-5">
-        <h1 class="text-4xl font-medium">Tratamentos</h1>
+        <h1 class="text-4xl font-medium text-center">Tratamentos</h1>
         <p class="text-center text-xl leading-5 px-4">
           Oferecer a você os melhores serviços que podemos.
         </p>
       </div>
       <div class="flex justify-center">
-        <div class="grid grid-cols-1 mt-4 gap-y-14 mx-10">
+        <div class="grid grid-cols-1 md:grid-cols-3 mt-4 gap-y-14 gap-6 mx-10">
           <div class="card">
-            <div class="imgCardBox">
-              <img src="./src/images/unha1.png" alt="hand" class="imgCard" />
-            </div>
-            <div class="card2box">
-              <div class="card2">
-                <span class="titleCard">Mãos</span>
-                <p class="descCard">
-                  Confira todos os serviços para suas mãos.
-                </p>
+            <a href="./src/pages/mao.html" class="w-full">
+              <div class="imgCardBox">
+                <img src="./src/images/unha1.png" alt="hand" class="imgCard" />
               </div>
-              <button class="buttonCard">Confira</button>
-            </div>
+              <div class="card2box">
+                <div class="card2">
+                  <span class="titleCard">Mãos</span>
+                  <p class="descCard">
+                    Confira todos os serviços para suas mãos.
+                  </p>
+                </div>
+                <a class="buttonCard" href="./src/pages/mao.html">Confira</a>
+              </div>
+            </a>
           </div>
           <div class="card">
-            <div class="imgCardBox">
-              <img src="./src/images/unha4.png" alt="foot" class="imgCard" />
-            </div>
-            <div class="card2box">
-              <div class="card2">
-                <span class="titleCard">Pé's</span>
-                <p class="descCard">Confira todos os serviços para seus pés.</p>
+            <a href="./src/pages/mao.html" class="w-full">
+              <div class="imgCardBox">
+                <img src="./src/images/unha4.png" alt="foot" class="imgCard" />
               </div>
-              <button class="buttonCard">Confira</button>
-            </div>
+              <div class="card2box">
+                <div class="card2">
+                  <span class="titleCard">Pé's</span>
+                  <p class="descCard">
+                    Confira todos os serviços para seus pés.
+                  </p>
+                </div>
+                <a class="buttonCard" href="./src/pages/pe.html">Confira</a>
+              </div>
+            </a>
           </div>
           <div class="card">
-            <div class="imgCardBox">
-              <img
-                src="./src/images/unha5.png"
-                alt="hand and foot"
-                class="imgCard"
-              />
-            </div>
-            <div class="card2box">
-              <div class="card2">
-                <span class="titleCard">Pacotes</span>
-                <p class="descCard">Confira todos os pacotes disponíveis.</p>
+            <a href="./src/pages/mao.html" class="w-full">
+              <div class="imgCardBox">
+                <img
+                  src="./src/images/unha5.png"
+                  alt="hand and foot"
+                  class="imgCard"
+                />
               </div>
-              <button class="buttonCard">Confira</button>
-            </div>
+              <div class="card2box">
+                <div class="card2">
+                  <span class="titleCard">Pacotes</span>
+                  <p class="descCard">Confira todos os pacotes disponíveis.</p>
+                </div>
+                <a class="buttonCard" href="./src/pages/pacote.html">Confira</a>
+              </div>
+            </a>
           </div>
         </div>
       </div>
     </section>
     <section class="bg-white">
-      <div class="info">
-        <div class="w-[13px] h-[22px] bg-brand-pink"></div>
-        <div class="infoImg">
-          <img src="./src/images/Calendar Icon 1.png" alt="calendar" />
+      <div class="bg-white flex justify-center">
+        <div class="info">
+          <div class="w-[13px] h-[22px] bg-brand-pink"></div>
+          <div class="infoImg">
+            <img src="./src/images/Calendar Icon 1.png" alt="calendar" />
+          </div>
+          <span class="infoTitle">Fácil Agendamento & Pagamento</span>
+          <p class="infoDesc">
+            Botão de contato no canto inferior da página leva diretamente ao
+            atendimento pelo WhatsApp e o Pagamento pode ser feito tanto por
+            PIX, Cartão ou Dinheiro diretamente após o serviço realizado!
+          </p>
         </div>
-        <span class="infoTitle">Fácil Agendamento & Pagamento</span>
-        <p class="infoDesc">
-          Botão de contato no canto inferior da página leva diretamente ao
-          atendimento pelo WhatsApp e o Pagamento pode ser feito tanto por PIX,
-          Cartão ou Dinheiro diretamente após o serviço realizado!
-        </p>
       </div>
-      <div class="info bg-light-10">
-        <div class="infoImg">
-          <img src="./src/images/Doctor Icon 1.png" alt="calendar" />
+      <div class="bg-light-10 flex justify-center">
+        <div class="info">
+          <div class="infoImg">
+            <img src="./src/images/Doctor Icon 1.png" alt="calendar" />
+          </div>
+          <span class="infoTitle">Profissional</span>
+          <p class="infoDesc">
+            Manicure não é apenas embelezar as unhas, é cuidar da saúde e
+            bem-estar de cada cliente com dedicação e profissionalismo
+          </p>
         </div>
-        <span class="infoTitle">Profissional</span>
-        <p class="infoDesc">
-          Manicure não é apenas embelezar as unhas, é cuidar da saúde e
-          bem-estar de cada cliente com dedicação e profissionalismo
-        </p>
       </div>
-      <div class="info">
-        <div class="infoImg">
-          <img
-            src="./src/images/Health Care Quality Icon 1.png"
-            alt="calendar"
-          />
+      <div class="bg-white flex justify-center">
+        <div class="info">
+          <div class="infoImg">
+            <img
+              src="./src/images/Health Care Quality Icon 1.png"
+              alt="calendar"
+            />
+          </div>
+          <span class="infoTitle">Protocolo de Higiene</span>
+          <p class="infoDesc">
+            Para garantir a segurança e bem-estar de todos, seguimos
+            rigorosamente os protocolos de higiene, utilizando materiais
+            esterilizados e descartáveis em cada atendimento.
+          </p>
         </div>
-        <span class="infoTitle">Protocolo de Higiene</span>
-        <p class="infoDesc">
-          Para garantir a segurança e bem-estar de todos, seguimos rigorosamente
-          os protocolos de higiene, utilizando materiais esterilizados e
-          descartáveis em cada atendimento.
-        </p>
       </div>
     </section>
     <section class="bg-brand-pink w-full pb-20">
@@ -136,7 +228,7 @@
           <div class="mt-[18px]"></div>
         </div>
         <div class="w-full flex items-center justify-center flex-col">
-          <div class="grid grid-cols-1 gap-y-10 mb-10">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 gap-y-10 mb-10">
             <div class="depoCard">
               <div class="depoImg">
                 <img
@@ -201,21 +293,21 @@
     </section>
     <section class="w-full">
       <div
-        class="pt-[33px] text-dark-10 text-center flex flex-col items-center"
+        class="py-[33px] text-dark-10 text-center flex flex-col items-center"
       >
-        <p class="text-lg font-medium leading-5 px-4">
+        <p class="text-lg font-medium leading-5 px-4 sm:w-[500px]">
           "Possibilitar a felicidade através de unhas bem feitas é meu maior
           desejo."
         </p>
         <div
           class="mt-[15px] bg-brand-pink rounded-full w-[31px] h-[31px]"
         ></div>
-        <p class="pt-[15px] text-lg px-10 leading-5">
+        <p class="pt-[15px] text-lg px-10 leading-5 sm:w-[400px]">
           Ana Clara Okamoto, Fundadora da Okamoto Beauty.
         </p>
       </div>
     </section>
-    <section class="bg-light-10 w-full">
+    <section id="newspromo" class="bg-light-10 w-full">
       <div class="pt-8 flex flex-col items-center text-center">
         <h1 class="text-4xl font-medium leading-7 mb-[5px] mx-4">
           Novidades & Promos
@@ -227,7 +319,7 @@
       <div
         class="flex w-full items-center justify-center mt-[34px] flex-col pb-16"
       >
-        <div class="grid grid-cols-1 px-5 gap-[45px]">
+        <div class="grid grid-cols-1 md:grid-cols-3 px-5 gap-6 gap-y-[45px]">
           <div class="promoCard">
             <div class="promoImg">
               <img
@@ -242,7 +334,7 @@
               >
               <p class="promoDesc">
                 Mantenha-as limpas e secas, hidrate-as regularmente, evite
-                produtos químicos agressivos e...
+                produtos químicos agressivos...
               </p>
               <a class="promoSeeMore">Veja Mais →</a>
             </div>
@@ -289,8 +381,8 @@
         <button class="btnPrimary mt-8">Todas Novidades e Promo</button>
       </div>
     </section>
-    <section class="w-full bg-white">
-      <div class="p-4 mb-4">
+    <section class="w-full bg-white flex justify-center">
+      <div class="p-4 mb-4 md:w-[860px]">
         <span class="text-4xl text-brand-pink font-medium leading-6"
           >Horários de atendimento</span
         >
@@ -300,13 +392,19 @@
           reencontrar o equilíbrio.
         </p>
         <ul class="mt-2 text-dark-20 text-lg leading-6 tracking-tight">
-          <li>Seg-sex: 09h ás 19h</li>
-          <li>Sábado: 09h ás 19h</li>
-          <li>Domingo: 09h ás 19h</li>
+          <li>
+            Seg-sex: <span class="text-brand-pink">08h</span> ás
+            <span class="text-brand-pink">19h</span>
+          </li>
+          <li>
+            Sábado: <span class="text-brand-pink">09h</span> ás
+            <span class="text-brand-pink">16h</span>
+          </li>
+          <li>Domingo: <span class="text-brand-pink">Fechado</span></li>
         </ul>
       </div>
     </section>
-    <section class="w-full bg-brand-pink pb-10">
+    <section id="book" class="w-full bg-brand-pink pb-10">
       <div class="text-white p-4 text-center">
         <span class="text-4xl leading-5 font-medium"
           >Preparada para transformar suas unhas?</span
@@ -316,15 +414,17 @@
         </p>
         <button class="btnPrimary mt-4">Agendar agora!</button>
       </div>
-      <div class="text-white mx-4 gap-4">
-        <div class="flex flex-col text-center items-center mb-3">
-          <span class="text-4xl font-medium leading-8"
-            >Deixe <br />
+      <div class="text-white mx-4 gap-4 flex flex-col items-center">
+        <div class="flex flex-col text-center items-center mb-5">
+          <span class="text-3xl font-medium leading-8"
+            >Deixe <br class="md:hidden" />
             seu FeedBack</span
           >
         </div>
-        <span class="text-xl">Sua mensagem!</span>
-        <form class="px-2 mt-16">
+        <div class="flex justify-start w-full max-w-[800px]">
+          <span class="text-xl">Sua mensagem!</span>
+        </div>
+        <form class="px-2 mt-16 w-full md:max-w-[860px]">
           <input
             type="text"
             placeholder="Escreva aqui"
@@ -336,9 +436,9 @@
         </form>
       </div>
     </section>
-    <section class="bg-light-10 w-full pb-4">
+    <section id="about" class="bg-light-10 w-full pb-4 flex justify-center">
       <div
-        class="px-4 mt-4 w-full flex flex-col text-center text-lg gap-2 leading-5 tracking-tight"
+        class="px-4 pt-4 w-full flex flex-col text-start text-lg gap-2 leading-5 tracking-tight max-w-[860px]"
       >
         <span class="text-2xl font-medium">Sobre nós</span>
         <p>
@@ -360,16 +460,28 @@
           confiança e bem-estar.
         </p>
         <div>
-          <span class="text-2xl font-medium">Contatos</span>
+          <span id="contact" class="text-2xl font-medium">Contatos</span>
           <div class="mt-2 text-dark-20 tracking-tight text-lg">
             <p class="leading-5">
               R. Dr. Camargo, 4326 - Zona II, Umuarama - PR, 87501-378
             </p>
             <p>
-              Email : <span class="text-brand-pink">anacokamoto@gmail.com</span>
+              Instagram :
+              <a
+                href="https://www.instagram.com/ac.okamoto/"
+                target="_blank"
+                class="text-brand-pink"
+                >@ac.okamoto</a
+              >
             </p>
             <p>
-              Telefone : <span class="text-brand-pink">(44) 9 8403-0462</span>
+              Telefone :
+              <a
+                href="https://wa.me/message/26BQFYERBAJNO1"
+                target="_blank"
+                class="text-brand-pink"
+                >(44) 9 8403-0462</a
+              >
             </p>
           </div>
         </div>
@@ -377,10 +489,11 @@
     </section>
     <footer class="bg-white w-full bottom-0 p-4">
       <div class="text-center gap-1 flex flex-col">
-        <span class="text-dark-10 text-4xl font-medium">Okamoto Beauty</span>
-        <p class="text-dark-20 text-lg">© 2024</p>
+        <a href="#" class="text-dark-10 text-4xl font-medium">Okamoto Beauty</a>
+        <p class="text-dark-20 text-lg">Raphael Teixeira © 2024</p>
         <p class="text-brand-pink text-lg">Privacidade - Termos</p>
       </div>
     </footer>
   </body>
+  <script src="./src/script.js"></script>
 </html>

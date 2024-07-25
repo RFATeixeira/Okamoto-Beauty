@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../output.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="../images/logo.svg" type="image/x-icon" />
+    <title>Pés - Okamoto Beauty</title>
+  </head>
+  <body class="text-dark-10">
+    <header class="fixed w-full top-0 z-50">
+      <nav class="h-[70px] flex bg-white">
+        <div
+          class="w-full flex items-center justify-between lg:justify-around mx-5"
+        >
+          <a href="../../index.html" class="flex flex-col justify-center">
+            <span class="text-2xl font-emphasis text-dark-10"
+              >OKAMOTO BEAUTY</span
+            >
+            <span class="text-black -mt-2 text-[12px] font-semibold"
+              >O cuidado que você merece!</span
+            >
+          </a>
+          <div class="flex items-center">
+            <div class="max-lg:hidden">
+              <ul class="flex gap-4 font-medium">
+                <li class="navBtn"><a href="../../index.html">INICIO</a></li>
+                <li class="navBtn"><a href="#treatments">TRATAMENTOS</a></li>
+                <li class="navBtn"><a href="#book">AGENDAMENTO</a></li>
+                <li class="navBtn">
+                  <a href="../../index.html#newspromo">NOVIDADES & PROMO</a>
+                </li>
+                <li class="navBtn">
+                  <a href="../../index.html#contact">CONTATO</a>
+                </li>
+              </ul>
+            </div>
+            <div class="flex gap-4 md:ml-4">
+              <button
+                id="menuBtn"
+                type="button"
+                class="lg:hidden hover:text-brand-pink transition duration-300 z-50"
+              >
+                <svg
+                  class="h-7 w-7"
+                  stroke="currentColor"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M10 18h10"
+                  ></path>
+                </svg>
+              </button>
+              <img src="../images/logo.svg" alt="Logo" class="w-7" />
+            </div>
+          </div>
+        </div>
+        <div
+          id="menu"
+          class="z-40 absolute right-0 hidden transition duration-300"
+        >
+          <div
+            class="mt-[70px] drop-shadow-2xl text-end rounded-l-3xl overflow-hidden"
+          >
+            <a
+              href="../../index.html"
+              class="bg-brand-pink hover:bg-brand-pink/90 text-white block px-3 py-2 font-medium drop-shadow-2xl border-b-2 border-brand-pink-20 transition duration-300"
+              >INICIO</a
+            >
+            <a
+              href="#treatments"
+              class="bg-brand-pink-10 hover:bg-brand-pink/90 text-white block px-3 py-2 font-medium drop-shadow-2xl border-b-2 border-brand-pink-20 transition duration-300"
+              >TRATAMENTOS</a
+            >
+            <a
+              href="#book"
+              class="bg-brand-pink-10 hover:bg-brand-pink/90 text-white block px-3 py-2 font-medium drop-shadow-2xl border-b-2 border-brand-pink-20 transition duration-300"
+              >AGENDAMENTO</a
+            >
+            <a
+              href="../../index.html#newspromo"
+              class="bg-brand-pink-10 hover:bg-brand-pink/90 text-white block px-3 py-2 font-medium drop-shadow-2xl border-b-2 border-brand-pink-20 transition duration-300"
+              >NOVIDADES & PROMO</a
+            >
+            <a
+              href="../../index.html#contact"
+              class="bg-brand-pink-10 hover:bg-brand-pink/90 text-white block px-3 py-2 font-medium drop-shadow-2xl transition duration-300"
+              >CONTATO</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section
+      id="treatments"
+      class="w-full font-body pt-[76px] bg-light-10 pb-24"
+    >
+      <div class="flex flex-col justify-center items-center mx-5">
+        <h1 class="text-4xl font-medium text-center">Tratamentos para pés</h1>
+        <p class="text-center text-xl leading-5 px-4">
+          Confira todos os serviços para seus pés.
+        </p>
+      </div>
+      <div class="flex justify-center">
+        <div class="grid grid-cols-1 md:grid-cols-3 mt-4 gap-y-14 gap-6 mx-10">
+          <div class="card">
+            <a href="#" class="w-full">
+              <div class="imgCardBox">
+                <img src="../images/unha1.png" alt="hand" class="imgCard" />
+              </div>
+              <div class="card2box">
+                <div class="card2">
+                  <span class="titleCard">Simples</span>
+                  <p class="descCard">Esmaltação e cuticula.</p>
+                </div>
+                <a class="buttonCard" href="#">R$ 35</a>
+              </div>
+            </a>
+          </div>
+          <div class="card">
+            <a href="#" class="w-full">
+              <div class="imgCardBox">
+                <img src="../images/unha4.png" alt="foot" class="imgCard" />
+              </div>
+              <div class="card2box">
+                <div class="card2">
+                  <span class="titleCard">Gel</span>
+                  <p class="descCard">Esmaltação em gel e cuticula.</p>
+                </div>
+                <a class="buttonCard" href="#">R$ 50</a>
+              </div>
+            </a>
+          </div>
+          <div class="card">
+            <a href="#" class="w-full">
+              <div class="imgCardBox">
+                <img
+                  src="../images/unha5.png"
+                  alt="hand and foot"
+                  class="imgCard"
+                />
+              </div>
+              <div class="card2box">
+                <div class="card2">
+                  <span class="titleCard">Podologia</span>
+                  <p class="descCard">
+                    Calosidades, unhas encravadas e problemas de pele.
+                  </p>
+                </div>
+                <a class="buttonCard" href="#">R$ 90</a>
+              </div>
+            </a>
+          </div>
+          <div class="card">
+            <a href="#" class="w-full">
+              <div class="imgCardBox">
+                <img
+                  src="../images/unha5.png"
+                  alt="hand and foot"
+                  class="imgCard"
+                />
+              </div>
+              <div class="card2box">
+                <div class="card2">
+                  <span class="titleCard">Spa dos pés</span>
+                  <p class="descCard">Higienização, esfoliação e Hidratação.</p>
+                </div>
+                <a class="buttonCard" href="#">R$ 85</a>
+              </div>
+            </a>
+          </div>
+          <div class="card">
+            <a href="#" class="w-full">
+              <div class="imgCardBox">
+                <img
+                  src="../images/unha5.png"
+                  alt="hand and foot"
+                  class="imgCard"
+                />
+              </div>
+              <div class="card2box">
+                <div class="card2">
+                  <span class="titleCard">Mãos e Pés</span>
+                  <p class="descCard">Esmaltação e cuticula.</p>
+                </div>
+                <a class="buttonCard" href="#">R$ 60</a>
+              </div>
+            </a>
+          </div>
+          <div class="card">
+            <a href="#" class="w-full">
+              <div class="imgCardBox">
+                <img
+                  src="../images/unha5.png"
+                  alt="hand and foot"
+                  class="imgCard"
+                />
+              </div>
+              <div class="card2box">
+                <div class="card2">
+                  <span class="titleCard">Mãos e Pés Gel</span>
+                  <p class="descCard">Esmaltação em gel e cuticula.</p>
+                </div>
+                <a class="buttonCard" href="#">R$ 90</a>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="w-full bg-white flex justify-center">
+      <div class="p-4 mb-4 md:w-[860px]">
+        <span class="text-4xl text-brand-pink font-medium leading-6"
+          >Horários de atendimento</span
+        >
+        <p class="text-dark-20 leading-5">
+          Se você se sente cansada e estressada após um dia de trabalho, teremos
+          prazer em lhe oferecer uma solução agradável e saudável para
+          reencontrar o equilíbrio.
+        </p>
+        <ul class="mt-2 text-dark-20 text-lg leading-6 tracking-tight">
+          <li>
+            Seg-sex: <span class="text-brand-pink">08h</span> ás
+            <span class="text-brand-pink">19h</span>
+          </li>
+          <li>
+            Sábado: <span class="text-brand-pink">09h</span> ás
+            <span class="text-brand-pink">16h</span>
+          </li>
+          <li>Domingo: <span class="text-brand-pink">Fechado</span></li>
+        </ul>
+      </div>
+    </section>
+    <section id="book" class="w-full bg-brand-pink pb-10">
+      <div class="text-white p-4 text-center">
+        <span class="text-4xl leading-5 font-medium"
+          >Preparada para transformar suas unhas?</span
+        >
+        <p class="text-xl leading-5 pt-1">
+          Escolha o serviço ideal para você abaixo!
+        </p>
+        <button class="btnPrimary mt-4">Agendar agora!</button>
+      </div>
+      <div class="text-white mx-4 gap-4 flex flex-col items-center">
+        <div class="flex flex-col text-center items-center mb-5">
+          <span class="text-3xl font-medium leading-8"
+            >Deixe <br class="md:hidden" />
+            seu FeedBack</span
+          >
+        </div>
+        <div class="flex justify-start w-full max-w-[800px]">
+          <span class="text-xl">Sua mensagem!</span>
+        </div>
+        <form class="px-2 mt-16 w-full md:max-w-[860px]">
+          <input
+            type="text"
+            placeholder="Escreva aqui"
+            class="bg-transparent border-b-dark-20 border-b-2 w-full focus:outline-none focus:placeholder:text-transparent"
+          />
+          <div class="w-full flex justify-center mt-4">
+            <button class="btnPrimary">Enviar mensagem</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer class="bg-white w-full bottom-0 p-4">
+      <div class="text-center gap-1 flex flex-col">
+        <a href="../../index.html" class="text-dark-10 text-4xl font-medium"
+          >Okamoto Beauty</a
+        >
+        <p class="text-dark-20 text-lg">Raphael Teixeira © 2024</p>
+        <p class="text-brand-pink text-lg">Privacidade - Termos</p>
+      </div>
+    </footer>
+  </body>
+  <script src="../script.js"></script>
+</html>

@@ -5,32 +5,35 @@
 @tailwind utilities;
 
 @layer components {
+  .navBtn {
+    @apply hover:text-brand-pink transition duration-300;
+  }
   .card {
-    @apply h-[310px] w-full max-w-[340px] flex flex-col items-center drop-shadow-xl;
+    @apply h-[320px] w-full max-w-[340px] flex flex-col items-center drop-shadow-xl relative;
   }
   .imgCardBox {
-    @apply p-2 bg-white rounded-3xl overflow-hidden h-[262px] w-full;
+    @apply p-2 bg-white rounded-3xl overflow-hidden h-[262px] w-full hover:bg-brand-pink/80 transition duration-500;
   }
   .imgCard {
     @apply rounded-2xl object-cover h-full w-full;
   }
   .card2box {
-    @apply flex flex-col -mt-16 w-[160px];
+    @apply flex flex-col w-full max-w-[280px] p-2 absolute bottom-0;
   }
   .card2 {
-    @apply h-[72px] bg-white flex flex-col items-center justify-center rounded-t-2xl text-center;
+    @apply bg-white flex flex-col items-center justify-center rounded-t-2xl p-2 text-center mx-4;
   }
   .titleCard {
     @apply text-lg text-brand-pink;
   }
   .descCard {
-    @apply text-dark-20 text-[10px];
+    @apply text-dark-20 text-[14px];
   }
   .buttonCard {
-    @apply h-[33px] bg-brand-pink rounded-b-2xl text-white;
+    @apply h-[40px] bg-brand-pink rounded-b-2xl text-white mx-4 font-buttons flex items-center justify-center;
   }
   .info {
-    @apply flex flex-col items-center pb-[25px];
+    @apply flex flex-col items-center pb-[25px] md:w-[900px];
   }
   .infoImg {
     @apply w-[50px] h-[50px] mt-[44px] flex items-center justify-center;
@@ -54,21 +57,33 @@
     @apply leading-4 tracking-tighter text-dark-20 pb-3;
   }
   .btnPrimary {
-    @apply bg-white text-brand-pink p-2 rounded-full px-4 font-semibold font-buttons;
+    @apply bg-white text-brand-pink p-2 rounded-full px-4 font-semibold font-buttons drop-shadow-2xl border-2 border-transparent hover:border-brand-pink-10 transition duration-300;
   }
   .promoCard {
-    @apply h-[330px] w-full max-w-[400px] bg-white p-3 rounded-3xl drop-shadow-2xl;
+    @apply h-[330px] md:h-min md:max-h-[360px] w-full max-w-[340px] bg-white p-3 rounded-3xl drop-shadow-2xl;
   }
   .promoImg {
-    @apply rounded-2xl overflow-clip h-[158px];
+    @apply rounded-2xl overflow-clip h-[158px] md:h-[120px];
   }
   .promoTitle {
-    @apply text-brand-pink text-2xl font-medium leading-6 tracking-tight;
+    @apply text-brand-pink text-2xl font-medium leading-6 tracking-tighter;
   }
   .promoDesc {
     @apply text-dark-20 text-lg leading-5 tracking-tighter;
   }
   .promoSeeMore {
     @apply text-brand-blue text-lg;
+  }
+  .handCard {
+    @apply w-full max-w-[340px] bg-white rounded-3xl flex flex-col items-center drop-shadow-2xl px-2;
+  }
+  .handImg {
+    @apply h-[163px] overflow-hidden rounded-2xl object-cover mt-2 drop-shadow-2xl;
+  }
+  .handName {
+    @apply text-brand-pink text-2xl font-medium mt-4;
+  }
+  .handDesc {
+    @apply leading-4 tracking-tighter text-dark-20 pb-3;
   }
 }

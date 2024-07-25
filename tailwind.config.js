@@ -13,6 +13,8 @@ module.exports = {
       },
       colors: {
         "brand-pink": "#E9646F",
+        "brand-pink-10": "#FF909A",
+        "brand-pink-20": "#D3777F",
         "brand-blue": "#4285F4",
         "dark-10": "#423838",
         "dark-20": "#9A9A9A",
