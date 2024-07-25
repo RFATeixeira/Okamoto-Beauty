@@ -56,4 +56,19 @@
   .btnPrimary {
     @apply bg-white text-brand-pink p-2 rounded-full px-4 font-semibold font-buttons;
   }
+  .promoCard {
+    @apply h-[330px] w-full max-w-[400px] bg-white p-3 rounded-3xl drop-shadow-2xl;
+  }
+  .promoImg {
+    @apply rounded-2xl overflow-clip h-[158px];
+  }
+  .promoTitle {
+    @apply text-brand-pink text-2xl font-medium leading-6 tracking-tight;
+  }
+  .promoDesc {
+    @apply text-dark-20 text-lg leading-5 tracking-tighter;
+  }
+  .promoSeeMore {
+    @apply text-brand-blue text-lg;
+  }
 }
