@@ -5,6 +5,18 @@
 @tailwind utilities;
 
 @layer components {
+  .handCard {
+    @apply w-full max-w-[340px] bg-white rounded-3xl flex flex-col items-center drop-shadow-2xl px-2;
+  }
+  .handImg {
+    @apply h-[163px] overflow-hidden rounded-2xl object-cover mt-2 drop-shadow-2xl;
+  }
+  .handName {
+    @apply text-brand-pink text-2xl font-medium mt-4;
+  }
+  .handDesc {
+    @apply leading-4 tracking-tighter text-dark-20 pb-3;
+  }
   .navBtn {
     @apply hover:text-brand-pink transition duration-300;
   }
@@ -73,17 +85,5 @@
   }
   .promoSeeMore {
     @apply text-brand-blue text-lg;
-  }
-  .handCard {
-    @apply w-full max-w-[340px] bg-white rounded-3xl flex flex-col items-center drop-shadow-2xl px-2;
-  }
-  .handImg {
-    @apply h-[163px] overflow-hidden rounded-2xl object-cover mt-2 drop-shadow-2xl;
-  }
-  .handName {
-    @apply text-brand-pink text-2xl font-medium mt-4;
-  }
-  .handDesc {
-    @apply leading-4 tracking-tighter text-dark-20 pb-3;
   }
 }
