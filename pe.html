@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../src/output.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/d12e85fc0e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="shortcut icon"
+      href="../src/images/logo.svg"
+      type="image/x-icon"
+    />
+    <title>Mãos - Okamoto Beauty</title>
+  </head>
+  <body class="text-dark-10">
+    <header class="fixed w-full top-0 z-50">
+      <nav class="h-[70px] flex bg-white">
+        <div
+          class="w-full flex items-center justify-between lg:justify-around mx-5"
+        >
+          <a href="../../index.html" class="flex flex-col justify-center">
+            <span class="text-2xl font-emphasis text-dark-10"
+              >OKAMOTO BEAUTY</span
+            >
+            <span class="text-black -mt-2 text-[12px] font-semibold"
+              >O cuidado que você merece!</span
+            >
+          </a>
+          <div class="flex items-center">
+            <div class="max-lg:hidden">
+              <ul class="flex gap-4 font-medium">
+                <li class="navBtn"><a href="./index.html">INICIO</a></li>
+                <li class="navBtn">
+                  <a href="./index.html#treatments">TRATAMENTOS</a>
+                </li>
+                <li class="navBtn">
+                  <a href="./index.html#book">AGENDAMENTO</a>
+                </li>
+                <li class="navBtn">
+                  <a href="./index.html#newspromo">NOVIDADES & PROMO</a>
+                </li>
+                <li class="navBtn">
+                  <a href="./index.html#contact">CONTATO</a>
+                </li>
+              </ul>
+            </div>
+            <div class="flex gap-4 md:ml-4">
+              <button
+                id="menuBtn"
+                type="button"
+                class="lg:hidden hover:text-brand-pink transition duration-300 z-50"
+              >
+                <svg
+                  class="h-7 w-7"
+                  stroke="currentColor"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M10 18h10"
+                  ></path>
+                </svg>
+              </button>
+              <img src="../src/images/logo.svg" alt="Logo" class="w-7" />
+            </div>
+          </div>
+        </div>
+        <div
+          id="menu"
+          class="z-40 absolute right-0 hidden transition duration-300"
+        >
+          <div
+            class="mt-[70px] drop-shadow-2xl text-end rounded-l-3xl overflow-hidden"
+          >
+            <a
+              href="./index.html"
+              class="bg-brand-pink hover:bg-brand-pink/90 text-white block px-3 py-2 font-medium drop-shadow-2xl border-b-2 border-brand-pink-20 transition duration-300"
+              >INICIO</a
+            >
+            <a
+              href="./index.html#treatments"
+              class="bg-brand-pink-10 hover:bg-brand-pink/90 text-white block px-3 py-2 font-medium drop-shadow-2xl border-b-2 border-brand-pink-20 transition duration-300"
+              >TRATAMENTOS</a
+            >
+            <a
+              href="./index.html#book"
+              class="bg-brand-pink-10 hover:bg-brand-pink/90 text-white block px-3 py-2 font-medium drop-shadow-2xl border-b-2 border-brand-pink-20 transition duration-300"
+              >AGENDAMENTO</a
+            >
+            <a
+              href="./index.html#newspromo"
+              class="bg-brand-pink-10 hover:bg-brand-pink/90 text-white block px-3 py-2 font-medium drop-shadow-2xl border-b-2 border-brand-pink-20 transition duration-300"
+              >NOVIDADES & PROMO</a
+            >
+            <a
+              href="./index.html#contact"
+              class="bg-brand-pink-10 hover:bg-brand-pink/90 text-white block px-3 py-2 font-medium drop-shadow-2xl transition duration-300"
+              >CONTATO</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="w-full">
+      <div
+        class="w-full h-[300px] md:h-[500px] lg:h-[700px] bg-hero-image2 bg-center bg-cover bg-no-repeat translate-y-16"
+      ></div>
+    </section>
+    <section id="treatments" class="w-full font-body bg-light-10 pb-24">
+      <div class="translate-y-7 rounded-t-[55px] bg-light-10 pt-5">
+        <div class="flex flex-col justify-center items-center mx-5">
+          <h1 class="text-4xl font-medium text-center leading-8 mb-2">
+            Tratamentos para mãos
+          </h1>
+          <p class="text-center text-xl leading-5 px-4">
+            Confira todos os serviços para suas mãos.
+          </p>
+        </div>
+        <div class="flex justify-center">
+          <div class="grid grid-cols-1 md:grid-cols-2 mt-4 gap-y-14 gap-6 mx-5">
+            <div class="handCard">
+              <div class="handImg">
+                <img
+                  src="../src/images/unha2.png"
+                  alt="woman"
+                  class="object-center -translate-y-8 object-cover w-[340px] h-max"
+                />
+              </div>
+              <div class="mx-2">
+                <span class="handName">Simples</span>
+                <p class="handDesc">
+                  Esmaltação: É o processo de aplicar esmalte nas unhas,
+                  incluindo a preparação das unhas, aplicação de base e esmalte
+                  colorido. Cuticulagem: Envolve o cuidado das cutículas, como
+                  amolecer, empurrar delicadamente e remover o excesso de pele.
+                </p>
+                <p class="handValues">
+                  Tempo Estimado:
+                  <span class="text-brand-pink">45 Minutos</span>
+                </p>
+                <p class="handValues">
+                  Valor: <span class="text-brand-pink">R$ 35</span>
+                </p>
+                <div class="w-full flex justify-center">
+                  <a href="#" class="btnsecondary px-10 mt-4">Agendar</a>
+                </div>
+              </div>
+            </div>
+            <div class="handCard">
+              <div class="handImg">
+                <img
+                  src="../src/images/unha1.png"
+                  alt="woman"
+                  class="object-center -translate-y-20 object-cover w-[340px] h-max"
+                />
+              </div>
+              <div class="mx-2">
+                <span class="handName">Esmaltação em Gel</span>
+                <p class="handDesc">
+                  Esmaltação: É o processo de aplicar esmalte nas unhas,
+                  incluindo a preparação das unhas, aplicação de base e esmalte
+                  colorido. Cuticulagem: Envolve o cuidado das cutículas, como
+                  amolecer, empurrar delicadamente e remover o excesso de pele.
+                </p>
+                <p class="handValues">
+                  Tempo Estimado:
+                  <span class="text-brand-pink">45 Minutos</span>
+                </p>
+                <p class="handValues">
+                  Valor: <span class="text-brand-pink">R$ 50</span>
+                </p>
+                <div class="w-full flex justify-center">
+                  <a href="#" class="btnsecondary px-10 mt-4">Agendar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="w-full bg-brand-pink flex flex-col items-center pb-8">
+      <div class="md:w-[860px]">
+        <div class="p-4 text-center">
+          <span class="text-3xl font-semibold">Okamoto Beauty</span>
+          <p class="text-lg font-medium -mt-2 mb-2">
+            Beleza nunca foi tão fácil.
+          </p>
+          <div class="text-start">
+            <p class="text-white leading-5">
+              A “Okamoto Beauty” é uma empresa que oferece serviços de beleza e
+              bem-estar em Umuarama, PR. Fundada por Ana Clara Okamoto, a missão
+              da Okamoto Beauty é proporcionar a todos os clientes o “poder de
+              viver” com confiança, realçando sua beleza única e expressando-se
+              de maneira autêntica.
+            </p>
+          </div>
+        </div>
+        <div class="px-4 py-2">
+          <span class="text-3xl text-white font-medium">Contatos</span>
+
+          <div>
+            <p class="text-white">
+              <i class="fa-solid fa-location-dot text-dark-10"></i>
+              R. Dr. Camargo, 4326 - Zona II, Umuarama - PR, 87501-378
+            </p>
+          </div>
+          <p class="font-medium">
+            <i class="fa-brands fa-instagram text-lg"></i> @ac.okamoto
+          </p>
+          <p class="font-medium">
+            <i class="fa-brands fa-whatsapp text-lg"></i> (44) 9 8403-0462
+          </p>
+        </div>
+        <div class="p-4 text-center">
+          <span class="text-white text-2xl leading-3 font-medium"
+            >Posts Recentes do Instagram</span
+          >
+          <div class="w-full justify-center flex">
+            <div class="grid grid-cols-3 mt-2 gap-2">
+              <div class="aspect-square w-full max-w-[200px] overflow-hidden">
+                <img
+                  src="./src/images/cabelo1.png"
+                  alt=""
+                  class="object-cover w-full h-full"
+                />
+              </div>
+              <div class="aspect-square w-full max-w-[200px] overflow-hidden">
+                <img
+                  src="./src/images/unha1.png"
+                  alt=""
+                  class="object-cover w-full h-full"
+                />
+              </div>
+              <div class="aspect-square w-full max-w-[200px] overflow-hidden">
+                <img
+                  src="./src/images/unha2.png"
+                  alt=""
+                  class="object-cover w-full h-full"
+                />
+              </div>
+              <div class="aspect-square w-full max-w-[200px] overflow-hidden">
+                <img
+                  src="./src/images/promo1.png"
+                  alt=""
+                  class="object-cover w-full h-full"
+                />
+              </div>
+              <div class="aspect-square w-full max-w-[200px] overflow-hidden">
+                <img
+                  src="./src/images/unha3.png"
+                  alt=""
+                  class="object-cover w-full h-full"
+                />
+              </div>
+              <div class="aspect-square w-full max-w-[200px] overflow-hidden">
+                <img
+                  src="./src/images/cabelo2.png"
+                  alt=""
+                  class="object-cover w-full h-full"
+                />
+              </div>
+              <div class="aspect-square w-full max-w-[200px] overflow-hidden">
+                <img
+                  src="./src/images/promo2.png"
+                  alt=""
+                  class="object-fill w-full h-full"
+                />
+              </div>
+              <div class="aspect-square w-full max-w-[200px] overflow-hidden">
+                <img
+                  src="./src/images/ana1.png"
+                  alt=""
+                  class="object-cover w-full h-full"
+                />
+              </div>
+              <div class="aspect-square w-full max-w-[200px] overflow-hidden">
+                <img
+                  src="./src/images/unha8.png"
+                  alt=""
+                  class="object-fill w-full h-max -translate-y-10"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-white w-full bottom-0 p-4">
+      <div class="text-center gap-1 flex flex-col">
+        <a href="../../index.html" class="text-dark-10 text-4xl font-medium"
+          >Okamoto Beauty</a
+        >
+        <p class="text-dark-20 text-lg">Raphael Teixeira © 2024</p>
+        <p class="text-brand-pink text-lg">Privacidade - Termos</p>
+      </div>
+    </footer>
+  </body>
+  <script src="../script.js"></script>
+</html>

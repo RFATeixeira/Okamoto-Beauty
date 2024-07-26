@@ -10,6 +10,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         "hero-image": "url('../src/images/hero-image.png')",
+        "hero-image2": "url('../src/images/hero-image-2.png')",
       },
       colors: {
         "brand-pink": "#E9646F",

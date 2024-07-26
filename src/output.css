@@ -556,49 +556,6 @@ video {
   --tw-contain-style:  ;
 }
 
-.handCard{
-  display: flex;
-  width: 100%;
-  max-width: 340px;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 1.5rem;
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  --tw-drop-shadow: drop-shadow(0 25px 25px rgb(0 0 0 / 0.15));
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.handImg{
-  margin-top: 0.5rem;
-  height: 163px;
-  overflow: hidden;
-  border-radius: 1rem;
-  -o-object-fit: cover;
-     object-fit: cover;
-  --tw-drop-shadow: drop-shadow(0 25px 25px rgb(0 0 0 / 0.15));
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.handName{
-  margin-top: 1rem;
-  font-size: 1.5rem;
-  line-height: 2rem;
-  font-weight: 500;
-  --tw-text-opacity: 1;
-  color: rgb(233 100 111 / var(--tw-text-opacity));
-}
-
-.handDesc{
-  padding-bottom: 0.75rem;
-  line-height: 1rem;
-  letter-spacing: -0.05em;
-  --tw-text-opacity: 1;
-  color: rgb(154 154 154 / var(--tw-text-opacity));
-}
-
 .navBtn{
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
@@ -820,7 +777,34 @@ video {
 
 .btnPrimary:hover{
   --tw-border-opacity: 1;
-  border-color: rgb(255 144 154 / var(--tw-border-opacity));
+  border-color: rgb(154 154 154 / var(--tw-border-opacity));
+}
+
+.btnsecondary{
+  border-radius: 9999px;
+  border-width: 2px;
+  border-color: transparent;
+  --tw-bg-opacity: 1;
+  background-color: rgb(233 100 111 / var(--tw-bg-opacity));
+  padding: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-family: Outfit, sans-serif;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  --tw-drop-shadow: drop-shadow(0 25px 25px rgb(0 0 0 / 0.15));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+.btnsecondary:hover{
+  --tw-border-opacity: 1;
+  border-color: rgb(154 154 154 / var(--tw-border-opacity));
 }
 
 .promoCard{
@@ -879,6 +863,55 @@ video {
   color: rgb(66 133 244 / var(--tw-text-opacity));
 }
 
+.handCard{
+  display: flex;
+  width: 100%;
+  max-width: 340px;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  border-radius: 1.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding: 1rem;
+  --tw-drop-shadow: drop-shadow(0 25px 25px rgb(0 0 0 / 0.15));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.handImg{
+  height: 170px;
+  overflow: hidden;
+  border-radius: 1rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  --tw-drop-shadow: drop-shadow(0 25px 25px rgb(0 0 0 / 0.15));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.handName{
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 500;
+  --tw-text-opacity: 1;
+  color: rgb(233 100 111 / var(--tw-text-opacity));
+}
+
+.handDesc{
+  padding-bottom: 0.75rem;
+  line-height: 1.25rem;
+  letter-spacing: -0.025em;
+  --tw-text-opacity: 1;
+  color: rgb(154 154 154 / var(--tw-text-opacity));
+}
+
+.handValues{
+  font-family: Outfit, sans-serif;
+  font-weight: 500;
+  letter-spacing: -0.025em;
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
 .fixed{
   position: fixed;
 }
@@ -909,6 +942,10 @@ video {
 
 .top-0{
   top: 0px;
+}
+
+.-z-10{
+  z-index: -10;
 }
 
 .z-40{
@@ -945,6 +982,10 @@ video {
 
 .mb-10{
   margin-bottom: 2.5rem;
+}
+
+.mb-2{
+  margin-bottom: 0.5rem;
 }
 
 .mb-4{
@@ -1007,6 +1048,20 @@ video {
   display: none;
 }
 
+.aspect-square{
+  aspect-ratio: 1 / 1;
+}
+
+.size-\[200px\]{
+  width: 200px;
+  height: 200px;
+}
+
+.size-full{
+  width: 100%;
+  height: 100%;
+}
+
 .h-7{
   height: 1.75rem;
 }
@@ -1017,6 +1072,10 @@ video {
 
 .h-\[244px\]{
   height: 244px;
+}
+
+.h-\[300px\]{
+  height: 300px;
 }
 
 .h-\[31px\]{
@@ -1030,6 +1089,22 @@ video {
 .h-max{
   height: -moz-max-content;
   height: max-content;
+}
+
+.h-full{
+  height: 100%;
+}
+
+.h-\[200px\]{
+  height: 200px;
+}
+
+.h-auto{
+  height: auto;
+}
+
+.max-h-\[200px\]{
+  max-height: 200px;
 }
 
 .w-7{
@@ -1060,12 +1135,49 @@ video {
   width: 100%;
 }
 
+.w-\[200px\]{
+  width: 200px;
+}
+
+.w-max{
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.w-\[\]{
+  width: ;
+}
+
+.w-\[400px\]{
+  width: 400px;
+}
+
+.w-\[800px\]{
+  width: 800px;
+}
+
+.w-\[600px\]{
+  width: 600px;
+}
+
 .max-w-\[800px\]{
   max-width: 800px;
 }
 
 .max-w-\[860px\]{
   max-width: 860px;
+}
+
+.max-w-\[60px\]{
+  max-width: 60px;
+}
+
+.max-w-\[80px\]{
+  max-width: 80px;
+}
+
+.max-w-\[200px\]{
+  max-width: 200px;
 }
 
 .-translate-y-20{
@@ -1078,8 +1190,46 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.-translate-y-8{
+  --tw-translate-y: -2rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-y-20{
+  --tw-translate-y: 5rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-y-7{
+  --tw-translate-y: 1.75rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-y-16{
+  --tw-translate-y: 4rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-translate-y-5{
+  --tw-translate-y: -1.25rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-translate-y-10{
+  --tw-translate-y: -2.5rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .grid-cols-1{
   grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.grid-cols-3{
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.flex-row{
+  flex-direction: row;
 }
 
 .flex-col{
@@ -1118,6 +1268,10 @@ video {
   gap: 1.5rem;
 }
 
+.gap-3{
+  gap: 0.75rem;
+}
+
 .gap-y-10{
   row-gap: 2.5rem;
 }
@@ -1145,6 +1299,11 @@ video {
 .rounded-l-3xl{
   border-top-left-radius: 1.5rem;
   border-bottom-left-radius: 1.5rem;
+}
+
+.rounded-t-\[55px\]{
+  border-top-left-radius: 55px;
+  border-top-right-radius: 55px;
 }
 
 .border-b-2{
@@ -1189,8 +1348,20 @@ video {
   background-image: url('../src/images/hero-image.png');
 }
 
+.bg-hero-image2{
+  background-image: url('../src/images/hero-image-2.png');
+}
+
 .bg-contain{
   background-size: contain;
+}
+
+.bg-cover{
+  background-size: cover;
+}
+
+.bg-center{
+  background-position: center;
 }
 
 .bg-top{
@@ -1204,6 +1375,16 @@ video {
 .object-cover{
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.object-fill{
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+.object-scale-down{
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
 }
 
 .object-bottom{
@@ -1264,6 +1445,16 @@ video {
   padding-bottom: 33px;
 }
 
+.py-4{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.py-6{
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
 .pb-10{
   padding-bottom: 2.5rem;
 }
@@ -1292,6 +1483,10 @@ video {
   padding-top: 1rem;
 }
 
+.pt-5{
+  padding-top: 1.25rem;
+}
+
 .pt-8{
   padding-top: 2rem;
 }
@@ -1306,6 +1501,14 @@ video {
 
 .pt-\[76px\]{
   padding-top: 76px;
+}
+
+.pb-6{
+  padding-bottom: 1.5rem;
+}
+
+.pb-8{
+  padding-bottom: 2rem;
 }
 
 .text-center{
@@ -1357,12 +1560,20 @@ video {
   line-height: 1.75rem;
 }
 
+.text-\[40px\]{
+  font-size: 40px;
+}
+
 .font-medium{
   font-weight: 500;
 }
 
 .font-semibold{
   font-weight: 600;
+}
+
+.font-normal{
+  font-weight: 400;
 }
 
 .leading-5{
@@ -1379,6 +1590,14 @@ video {
 
 .leading-8{
   line-height: 2rem;
+}
+
+.leading-4{
+  line-height: 1rem;
+}
+
+.leading-3{
+  line-height: .75rem;
 }
 
 .tracking-tight{
@@ -1496,6 +1715,14 @@ video {
     height: 600px;
   }
 
+  .md\:h-\[700px\]{
+    height: 700px;
+  }
+
+  .md\:h-\[500px\]{
+    height: 500px;
+  }
+
   .md\:w-\[800px\]{
     width: 800px;
   }
@@ -1508,6 +1735,10 @@ video {
     max-width: 860px;
   }
 
+  .md\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .md\:grid-cols-3{
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -1516,6 +1747,10 @@ video {
 @media (min-width: 1024px){
   .lg\:hidden{
     display: none;
+  }
+
+  .lg\:h-\[700px\]{
+    height: 700px;
   }
 
   .lg\:justify-around{
