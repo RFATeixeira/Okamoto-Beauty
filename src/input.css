@@ -62,26 +62,11 @@
   .btnsecondary {
     @apply text-white bg-brand-pink p-2 rounded-full px-4 font-semibold font-buttons drop-shadow-2xl border-2 border-transparent hover:border-dark-20 transition duration-300;
   }
-  .promoCard {
-    @apply h-[330px] md:h-min md:max-h-[360px] w-full max-w-[340px] bg-white p-3 rounded-3xl drop-shadow-2xl;
-  }
-  .promoImg {
-    @apply rounded-2xl overflow-clip h-[158px] md:h-[120px];
-  }
-  .promoTitle {
-    @apply text-brand-pink text-2xl font-medium leading-6 tracking-tighter;
-  }
-  .promoDesc {
-    @apply text-dark-20 text-lg leading-5 tracking-tighter;
-  }
-  .promoSeeMore {
-    @apply text-brand-blue text-lg;
-  }
   .handCard {
     @apply w-full max-w-[340px] bg-white rounded-3xl flex flex-col items-center drop-shadow-2xl p-4 gap-3;
   }
   .handImg {
-    @apply h-[170px] overflow-hidden rounded-2xl object-cover  drop-shadow-2xl;
+    @apply h-[170px] overflow-hidden rounded-2xl drop-shadow-2xl;
   }
   .handName {
     @apply text-brand-pink text-2xl font-medium;
