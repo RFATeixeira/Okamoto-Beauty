@@ -9,6 +9,15 @@
       href="./src/images/logo.svg"
       type="image/x-icon"
     />
+    <meta
+      name="keywords"
+      content="manicure, pedicure, podologia, spa dos pes, unha gel, okamoto, beauty, ana clara"
+    />
+    <meta
+      name="description"
+      content="Página dedica ao agendamento dos tratamentos de manicure e pedicure de Okamoto Beauty por Ana Clara Okamoto"
+    />
+    <meta name="author" content="Raphael Teixeira" />
     <title>Okamoto Beauty</title>
   </head>
   <body class="text-dark-10">
@@ -32,7 +41,7 @@
                 <li class="navBtn"><a href="#treatments">TRATAMENTOS</a></li>
                 <li class="navBtn"><a href="#book">AGENDAMENTO</a></li>
                 <li class="navBtn">
-                  <a href="#newspromo">NOVIDADES & PROMO</a>
+                  <a href="#time">HORÁRIO</a>
                 </li>
                 <li class="navBtn"><a href="#contact">CONTATO</a></li>
               </ul>
@@ -84,9 +93,9 @@
               >AGENDAMENTO</a
             >
             <a
-              href="#newspromo"
+              href="#time"
               class="bg-brand-pink-10 hover:bg-brand-pink/90 text-white block px-3 py-2 font-medium drop-shadow-2xl border-b-2 border-brand-pink-20 transition duration-300"
-              >NOVIDADES & PROMO</a
+              >HORÁRIO</a
             >
             <a
               href="#contact"
@@ -109,10 +118,7 @@
         </a>
       </div>
     </section>
-    <section
-      id="treatments"
-      class="w-full font-body pt-[76px] bg-light-10 pb-24"
-    >
+    <main id="treatments" class="w-full font-body pt-[76px] bg-light-10 pb-24">
       <div class="flex flex-col justify-center items-center mx-5">
         <h1 class="text-4xl font-medium text-center">Tratamentos</h1>
         <p class="text-center text-xl leading-5 px-4">
@@ -121,7 +127,7 @@
       </div>
       <div class="flex justify-center">
         <div class="grid grid-cols-1 md:grid-cols-3 mt-4 gap-y-14 gap-6 mx-10">
-          <div class="card">
+          <div class="card group">
             <a href="./mao.html" class="w-full">
               <div class="imgCardBox">
                 <img src="./src/images/unha1.png" alt="hand" class="imgCard" />
@@ -137,7 +143,7 @@
               </div>
             </a>
           </div>
-          <div class="card">
+          <div class="card group">
             <a href="./pe.html" class="w-full">
               <div class="imgCardBox">
                 <img src="./src/images/unha4.png" alt="foot" class="imgCard" />
@@ -153,7 +159,7 @@
               </div>
             </a>
           </div>
-          <div class="card">
+          <div class="card group">
             <a href="./pacote.html" class="w-full">
               <div class="imgCardBox">
                 <img
@@ -173,7 +179,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </main>
     <section class="bg-white">
       <div class="bg-white flex justify-center">
         <div class="info">
@@ -228,63 +234,71 @@
           <div class="mt-[18px]"></div>
         </div>
         <div class="w-full flex items-center justify-center flex-col">
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 gap-y-10 mb-10">
-            <div class="depoCard">
-              <div class="depoImg">
-                <img
-                  src="./src/images/depoiment-ander.png"
-                  alt="woman"
-                  class="object-center -translate-y-20 object-cover w-[340px] h-max"
-                />
-              </div>
-              <div class="mx-2">
-                <span class="depoName">Ander</span>
-                <p class="depoDesc">
-                  Adoro o atendimento da minha manicure! Ela é super pontual e
-                  sempre usa produtos de qualidade. Além disso, o ambiente é
-                  muito agradável e acolhedor. Fazer as unhas com ela é um
-                  momento de relaxamento.
-                </p>
-              </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 gap-y-10 mb-4">
+            <div class="depoCard group">
+              <a href="https://www.instagram.com/anderokamoto/" target="_blank">
+                <div class="depoImg">
+                  <img
+                    src="./src/images/depoiment-ander.png"
+                    alt="woman"
+                    class="depoImgIn"
+                  />
+                </div>
+                <div class="mx-2">
+                  <span class="depoName">Ander</span>
+                  <p class="depoDesc">
+                    Adoro o atendimento da minha manicure! Ela é super pontual e
+                    sempre usa produtos de qualidade. Além disso, o ambiente é
+                    muito agradável e acolhedor. Fazer as unhas com ela é um
+                    momento de relaxamento.
+                  </p>
+                </div>
+              </a>
             </div>
-            <div class="depoCard">
-              <div class="depoImg">
-                <img
-                  src="./src/images/depoiment-thais.png"
-                  alt="woman"
-                  class="object-center -translate-y-20 object-cover w-[340px] h-max"
-                />
-              </div>
-              <div class="mx-2">
-                <span class="depoName">Thais</span>
-                <p class="depoDesc">
-                  Sempre tive dificuldade em encontrar uma manicure que
-                  realmente entendesse o que eu queria. Desde que comecei a
-                  fazer minhas unhas com a Ana, nunca mais precisei procurar
-                  outra profissional.
-                </p>
-              </div>
+            <div class="depoCard group">
+              <a href="https://www.instagram.com/diias.t/" target="_blank">
+                <div class="depoImg">
+                  <img
+                    src="./src/images/depoiment-thais.png"
+                    alt="woman"
+                    class="depoImgIn"
+                  />
+                </div>
+                <div class="mx-2">
+                  <span class="depoName">Thais</span>
+                  <p class="depoDesc">
+                    Sempre tive dificuldade em encontrar uma manicure que
+                    realmente entendesse o que eu queria. Desde que comecei a
+                    fazer minhas unhas com a Ana, nunca mais precisei procurar
+                    outra profissional.
+                  </p>
+                </div>
+              </a>
             </div>
-            <div class="depoCard">
-              <div class="depoImg">
-                <img
-                  src="./src/images/depoiment-cauane.png"
-                  alt="woman"
-                  class="object-center -translate-y-20 object-cover w-[340px] h-max"
-                />
-              </div>
-              <div class="mx-2">
-                <span class="depoName">Cauane</span>
-                <p class="depoDesc">
-                  Fazer as unhas com a minha manicure é sempre uma experiência
-                  maravilhosa. Ela é extremamente profissional e detalhista,
-                  além de ser uma pessoa muito simpática. Saio do salão sempre
-                  satisfeita.
-                </p>
-              </div>
+            <div class="depoCard group">
+              <a
+                href="https://www.instagram.com/cauanecarmanini_/"
+                target="_blank"
+              >
+                <div class="depoImg">
+                  <img
+                    src="./src/images/depoiment-cauane.png"
+                    alt="woman"
+                    class="depoImgIn"
+                  />
+                </div>
+                <div class="mx-2">
+                  <span class="depoName">Cauane</span>
+                  <p class="depoDesc">
+                    Fazer as unhas com a minha manicure é sempre uma experiência
+                    maravilhosa. Ela é extremamente profissional e detalhista,
+                    além de ser uma pessoa muito simpática. Saio do salão sempre
+                    satisfeita.
+                  </p>
+                </div>
+              </a>
             </div>
           </div>
-          <button class="btnPrimary">Todos FeedBacks</button>
         </div>
       </div>
     </section>
@@ -304,7 +318,7 @@
         </p>
       </div>
     </section>
-    <section class="w-full bg-white flex justify-center">
+    <section id="time" class="w-full bg-white flex justify-center">
       <div class="p-4 mb-4 md:w-[860px]">
         <span class="text-4xl text-brand-pink font-medium leading-6"
           >Horários de atendimento</span

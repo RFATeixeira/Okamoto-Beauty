@@ -12,10 +12,10 @@
     @apply h-[320px] w-full max-w-[340px] flex flex-col items-center drop-shadow-xl relative;
   }
   .imgCardBox {
-    @apply p-2 bg-white rounded-3xl overflow-hidden h-[262px] w-full hover:bg-brand-pink/80 transition duration-500;
+    @apply p-2 bg-white rounded-3xl overflow-hidden h-[262px] w-full group-hover:bg-brand-pink/80 transition duration-500;
   }
   .imgCard {
-    @apply rounded-2xl object-cover h-full w-full;
+    @apply rounded-2xl object-cover overflow-hidden h-full w-full;
   }
   .card2box {
     @apply flex flex-col w-full max-w-[280px] p-2 absolute bottom-0;
@@ -50,8 +50,11 @@
   .depoImg {
     @apply h-[163px] overflow-hidden rounded-2xl object-cover mt-2 drop-shadow-2xl;
   }
+  .depoImgIn {
+    @apply object-center -translate-y-20 object-cover w-[340px] h-max group-hover:scale-105 transition duration-300;
+  }
   .depoName {
-    @apply text-dark-10 text-2xl font-medium;
+    @apply text-dark-10 text-2xl font-medium group-hover:text-brand-pink transition duration-300;
   }
   .depoDesc {
     @apply leading-4 tracking-tighter text-dark-20 pb-3;
