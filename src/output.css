@@ -797,6 +797,8 @@ video {
   padding-left: 1rem;
   padding-right: 1rem;
   font-family: Outfit, sans-serif;
+  font-size: 0.75rem;
+  line-height: 1rem;
   font-weight: 600;
   --tw-text-opacity: 1;
   color: rgb(233 100 111 / var(--tw-text-opacity));
@@ -814,6 +816,13 @@ video {
   border-color: rgb(154 154 154 / var(--tw-border-opacity));
 }
 
+@media (min-width: 768px){
+  .btnPrimary{
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
 .btnsecondary{
   border-radius: 9999px;
   border-width: 2px;
@@ -824,6 +833,8 @@ video {
   padding-left: 1rem;
   padding-right: 1rem;
   font-family: Outfit, sans-serif;
+  font-size: 0.75rem;
+  line-height: 1rem;
   font-weight: 600;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -839,6 +850,13 @@ video {
 .btnsecondary:hover{
   --tw-border-opacity: 1;
   border-color: rgb(154 154 154 / var(--tw-border-opacity));
+}
+
+@media (min-width: 768px){
+  .btnsecondary{
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 }
 
 .handCard{
@@ -1068,28 +1086,16 @@ video {
   width: 100%;
 }
 
+.max-w-\[1300px\]{
+  max-width: 1300px;
+}
+
 .max-w-\[200px\]{
   max-width: 200px;
 }
 
 .max-w-\[860px\]{
   max-width: 860px;
-}
-
-.max-w-\[900px\]{
-  max-width: 900px;
-}
-
-.max-w-\[1200px\]{
-  max-width: 1200px;
-}
-
-.max-w-\[1400px\]{
-  max-width: 1400px;
-}
-
-.max-w-\[1300px\]{
-  max-width: 1300px;
 }
 
 .-translate-y-10{
@@ -1243,13 +1249,14 @@ video {
   padding: 1rem;
 }
 
-.p-8{
-  padding: 2rem;
-}
-
 .px-10{
   padding-left: 2.5rem;
   padding-right: 2.5rem;
+}
+
+.px-20{
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 
 .px-3{
@@ -1272,19 +1279,14 @@ video {
   padding-bottom: 0.5rem;
 }
 
-.py-\[33px\]{
-  padding-top: 33px;
-  padding-bottom: 33px;
-}
-
 .py-8{
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
 
-.px-20{
-  padding-left: 5rem;
-  padding-right: 5rem;
+.py-\[33px\]{
+  padding-top: 33px;
+  padding-bottom: 33px;
 }
 
 .pb-1{
@@ -1489,8 +1491,8 @@ video {
 }
 
 @media (min-width: 768px){
-  .md\:bottom-56{
-    bottom: 14rem;
+  .md\:bottom-32{
+    bottom: 8rem;
   }
 
   .md\:left-8{
@@ -1505,8 +1507,8 @@ video {
     height: 400px;
   }
 
-  .md\:h-\[600px\]{
-    height: 600px;
+  .md\:h-\[500px\]{
+    height: 500px;
   }
 
   .md\:w-\[800px\]{

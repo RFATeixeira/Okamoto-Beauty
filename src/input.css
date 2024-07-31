@@ -60,10 +60,10 @@
     @apply leading-4 tracking-tighter text-dark-20 pb-3;
   }
   .btnPrimary {
-    @apply bg-white text-brand-pink p-2 rounded-full px-4 font-semibold font-buttons drop-shadow-2xl border-2 border-transparent hover:border-dark-20 transition duration-300;
+    @apply bg-white md:text-base text-xs text-brand-pink p-2 rounded-full px-4 font-semibold font-buttons drop-shadow-2xl border-2 border-transparent hover:border-dark-20 transition duration-300;
   }
   .btnsecondary {
-    @apply text-white bg-brand-pink p-2 rounded-full px-4 font-semibold font-buttons drop-shadow-2xl border-2 border-transparent hover:border-dark-20 transition duration-300;
+    @apply text-white md:text-base text-xs bg-brand-pink p-2 rounded-full px-4 font-semibold font-buttons drop-shadow-2xl border-2 border-transparent hover:border-dark-20 transition duration-300;
   }
   .handCard {
     @apply w-full max-w-[340px] bg-white rounded-3xl flex flex-col items-center drop-shadow-2xl p-4 gap-3;
