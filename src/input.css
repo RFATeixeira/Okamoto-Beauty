@@ -83,4 +83,7 @@
   .handBtn {
     @apply bg-brand-pink p-2 w-full max-w-[200px] text-white rounded-full flex justify-center items-center mt-4 mx-8;
   }
+  .whatsIcon {
+    @apply fixed bottom-[20px] md:bottom-[30px] right-[20px] md:right-[30px] text-[30px] bg-brand-pink text-white rounded-full p-[3px] w-[50px] h-[50px] flex z-50 drop-shadow-2xl hover:bg-white hover:text-brand-pink transition duration-300 border-2 border-brand-pink items-center justify-center;
+  }
 }
